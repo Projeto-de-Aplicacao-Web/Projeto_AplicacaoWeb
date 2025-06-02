@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cadastro - Agenda</title>
+    <link rel="stylesheet" href="/css/login/login.css" />
+  </head>
+  <body>
+    <main class="container" role="main" aria-label="Área de Cadastro">
+      <h1>Cadastro</h1>
+      <form id="cadastroForm" novalidate>
+        <div class="field-group">
+          <label for="username">Usuário</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div class="field-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            maxlength="20"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div id="message" aria-live="polite"></div>
+        <div class="buttons">
+          <button type="button" class="secondary" onclick="goToLogin()">
+            Voltar ao Login
+          </button>
+          <button type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </main>
+    <script src="/js/logout/logout.js"></script>
+  </body>
+</html>

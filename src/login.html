@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Login - Agenda</title>
+    <link rel="stylesheet" href="/css/login/login.css" />
+  </head>
+  <body>
+    <main class="container" role="main" aria-label="Área de Login">
+      <h1>Login</h1>
+      <form id="loginForm" novalidate>
+        <div class="field-group">
+          <label for="username">Usuário</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            autocomplete="username"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div class="field-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            minlength="8"
+            maxlength="20"
+            required
+            aria-required="true"
+          />
+        </div>
+        <div id="message" aria-live="polite"></div>
+        <div class="buttons">
+          <button type="button" class="secondary" onclick="goToCadastro()">
+            Cadastrar-se
+          </button>
+          <button type="submit">Entrar</button>
+        </div>
+      </form>
+    </main>
+    <script src="/js/login/login.js"></script>
+  </body>
+</html>

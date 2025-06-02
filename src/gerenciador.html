@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador - Agenda</title>
+    <link rel="stylesheet" href="/css/pags/gerenciador.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bem-vindo ao Gerenciador</h1>
+    </header>
+    <div>
+      <p>Para voltar ao login, <a href="login.html">clique aqui</a>.</p>
+    </div>
+    <div class="content">
+      <h2>Gerenciar Tarefas</h2>
+      <div class="form-group">
+        <input type="text" id="taskInput" placeholder="Nova Tarefa" />
+        <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+      </div>
+      <div class="task-list" id="taskList"></div>
+    </div>
+
+    <script src="/js/pags/gerenciador.js"></script>
+  </body>
+</html>

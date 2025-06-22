@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerenciador - Agenda</title>
-    <link rel="stylesheet" href="/css/pags/gerenciador.css" />
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/pags/gerenciador.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.js"></script>
+    <script defer src="../js/pags/gerenciador.js"></script>
   </head>
   <body>
     <header>
       <h1>Bem-vindo ao Gerenciador</h1>
+      <input type="button" value="Sair ➡︎" onclick="window.location.href='index.html'">
     </header>
+
     <div>
       <p>Para voltar ao login, <a href="login.html">clique aqui</a>.</p>
     </div>
+
     <div class="content">
       <h2>Gerenciar Tarefas</h2>
       <div class="form-group">
         <input type="text" id="taskInput" placeholder="Nova Tarefa" />
+        <input type="file" id="taskFile" accept="image/*,.pdf,.doc,.docx" />
         <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
       </div>
       <div class="task-list" id="taskList"></div>
     </div>
-
-    <script src="/js/pags/gerenciador.js"></script>
+    <div id="clima" style="position: fixed; top: 10px; right: 10px; background: #f0f0f0; padding: 8px; border-radius: 5px; font-weight: bold;"></div>
   </body>
 </html>

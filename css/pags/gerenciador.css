@@ -5,6 +5,25 @@
         padding: 20px;
         background-color: #f4f4f4;
       }
+      .botaoSair {
+        padding: 14px 32px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #1466d4;
+        background-color: #fff;
+        box-shadow: 0 6px 10px rgba(20, 102, 212, 0.3);
+       transition: background-color 0.3s ease, color 0.3s ease;
+       user-select: none;
+       margin-left: 94%;
+       
+      }
+      .botaoSair:hover {
+        background-color: #082b5a;
+        color:#fff;
+      }
       header {
         background-color: #1466d4;
         color: white;

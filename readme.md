@@ -36,7 +36,7 @@ Funcionalidades a serem criadas:
 
 ## Possível API:
 
-OpenWeatherMap Link: openweathermap.org/api
+Open-Meteo Link: https://open-meteo.com 
 
 - Possível endpoint a serem consumidos:
   • Cadastrar Usuário
@@ -67,5 +67,7 @@ OpenWeatherMap Link: openweathermap.org/api
   POST /tasks/{taskId}/image ou POST /lists/{listId}/image
 - Adiciona uma imagem relacionada.
   • Mostrar Clima
-  GET /weather?location={location}
-  Obtém informações do clima para a localização especificada (consumindo uma API externa, ex: OpenWeatherMap).
+  GET /v1/forecast
+   • Retorna previsão do tempo para uma localização específica
+  GET /V1/archive
+   • 	Retorna dados históricos do clima
